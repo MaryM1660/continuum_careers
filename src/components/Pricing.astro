@@ -34,22 +34,6 @@ const plans = [
     highlighted: true,
     badge: 'Most Popular',
   },
-  {
-    name: 'Executive',
-    price: '$149',
-    period: '/month',
-    description: 'Premium support for leadership-level moves',
-    features: [
-      'Everything in Professional',
-      'Dedicated career strategist',
-      'Executive positioning narrative',
-      'Compensation negotiation prep',
-      'Leadership transition support',
-      'Promotion & advancement strategy',
-    ],
-    cta: 'Contact Us',
-    highlighted: false,
-  },
 ];
 ---
 
@@ -68,7 +52,7 @@ const plans = [
     </div>
 
     <!-- Pricing cards -->
-    <div class="grid md:grid-cols-3 gap-8 items-start">
+    <div class="grid md:grid-cols-2 gap-8 items-start max-w-3xl mx-auto">
       {plans.map((plan, i) => (
         <div
           data-animate

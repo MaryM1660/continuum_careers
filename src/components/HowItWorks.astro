@@ -2,29 +2,29 @@
 const steps = [
   {
     number: '01',
-    title: 'We Start With You',
-    description: 'No templates, no forms — just conversation. We take the time to understand who you really are: your experience, your strengths, even the things you\'ve stopped noticing about yourself.',
+    title: 'Deep Discovery',
+    description: 'Through voice conversations, we learn your real story — not bullet points, but actual cases: projects you led, problems you solved, decisions you made. Everything gets structured and tagged automatically.',
     visual: 'discovery',
     color: 'magenta',
   },
   {
     number: '02',
-    title: 'We Map Your Options',
-    description: 'Your experience tells several different stories. We show you every viable direction, what each path needs from you, and help you decide where to aim.',
+    title: 'Career Strategy',
+    description: 'We help you develop a clear strategy — in several directions at once. Each variant gets its own narrative, its own priorities. You see the trade-offs and decide where to aim.',
     visual: 'architecture',
     color: 'amber',
   },
   {
     number: '03',
-    title: 'We Get You Ready',
-    description: 'Your real achievements — structured and positioned for the right opportunities. Mock interviews that know your story inside out. You walk in prepared.',
+    title: 'Documents & Prep',
+    description: 'Resumes and cover letters built from your real cases — not keywords. Mock interviews calibrated to your target roles. You walk in knowing your story inside out.',
     visual: 'cases',
     color: 'magenta',
   },
   {
     number: '04',
-    title: 'We Launch — And Stay',
-    description: 'Targeted applications with documents built from your real profile. And when you land the role — we\'re still here. Through settling in, through your first review, through your next promotion.',
+    title: 'Launch & Beyond',
+    description: 'Targeted applications, not mass-sending. And when you land the role — we stay. Meeting prep, achievement communication, promotion strategy.',
     visual: 'beyond',
     color: 'amber',
   },
@@ -56,7 +56,7 @@ const steps = [
             <!-- Content -->
             <div class={`${i % 2 === 1 ? 'lg:order-2 lg:text-left' : ''}`}>
               <div class="flex items-center gap-4 mb-4">
-                <span class={`text-5xl font-black ${step.color === 'magenta' ? 'text-brand-magenta/20 dark:text-brand-magenta/15' : 'text-brand-amber/20 dark:text-brand-amber/15'}`}>
+                <span class={`text-5xl font-black ${step.color === 'magenta' ? 'text-brand-magenta/40 dark:text-brand-magenta/30' : 'text-brand-amber/40 dark:text-brand-amber/30'}`}>
                   {step.number}
                 </span>
                 <div class={`h-px flex-1 ${step.color === 'magenta' ? 'bg-brand-magenta/20' : 'bg-brand-amber/20'}`}></div>
