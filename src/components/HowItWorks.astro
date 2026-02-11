@@ -2,29 +2,29 @@
 const steps = [
   {
     number: '01',
-    title: 'Deep Discovery',
-    description: 'We start by learning everything about you. Not just your job titles — who you really are, why you\'re looking, what drives you. Through natural voice conversations, AI uncovers achievements you\'ve forgotten, skills you take for granted, and the full complexity of your career story.',
+    title: 'We Start With You',
+    description: 'No templates, no forms — just conversation. We take the time to understand who you really are: your experience, your strengths, even the things you\'ve stopped noticing about yourself.',
     visual: 'discovery',
     color: 'magenta',
   },
   {
     number: '02',
-    title: 'Career Architecture',
-    description: 'Your experience contains multiple career paths — and each one needs a different story. We help you map out every viable direction, understand trade-offs, and decide which cases to highlight or hide for each track. Leadership helps here but hurts there. Portfolio is an asset for one path and noise for another.',
+    title: 'We Map Your Options',
+    description: 'Your experience tells several different stories. We show you every viable direction, what each path needs from you, and help you decide where to aim.',
     visual: 'architecture',
     color: 'amber',
   },
   {
     number: '03',
-    title: 'Cases & Mock Interviews',
-    description: 'We draw out your real cases through voice — then tag, structure, and position each one for your career tracks. Run mock interviews with AI that knows your full profile. Practice the version of your story that\'s right for each specific opportunity.',
+    title: 'We Get You Ready',
+    description: 'Your real achievements — structured and positioned for the right opportunities. Mock interviews that know your story inside out. You walk in prepared.',
     visual: 'cases',
     color: 'magenta',
   },
   {
     number: '04',
-    title: 'Launch & Beyond',
-    description: 'Strategic applications, not 500 blind ones. Tailored documents generated from your profile for each target. And when you land the role — we stay. Probation support, 1:1 prep, promotion strategy. Your career becomes a process you manage, not a lottery you play.',
+    title: 'We Launch — And Stay',
+    description: 'Targeted applications with documents built from your real profile. And when you land the role — we\'re still here. Through settling in, through your first review, through your next promotion.',
     visual: 'beyond',
     color: 'amber',
   },
@@ -37,8 +37,8 @@ const steps = [
     <div class="text-center max-w-3xl mx-auto mb-20">
       <p data-animate class="text-sm font-semibold uppercase tracking-wider text-brand-amber mb-4">How It Works</p>
       <h2 data-animate class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-6 stagger-1">
-        From "who am I, really?" to<br />
-        <span class="gradient-text-reverse">owning your career</span>
+        From "where do I even start" to<br />
+        <span class="gradient-text-reverse">owning your next move</span>
       </h2>
     </div>
 
@@ -98,13 +98,13 @@ const steps = [
                           <div class="w-0.5 bg-brand-magenta/50 rounded-full voice-bar-sm" style={`animation-delay: ${j * 0.06}s;`}></div>
                         ))}
                       </div>
-                      <p class="text-[11px] text-cosmos-500 dark:text-cosmos-400 italic">"So your title was Lead Developer, but in practice you were running three different functions..."</p>
+                      <p class="text-[11px] text-cosmos-500 dark:text-cosmos-400 italic">"So your title stayed the same, but it sounds like your actual role changed completely..."</p>
                     </div>
                     <!-- Insights being extracted -->
                     <div class="space-y-2">
                       {[
-                        { label: 'Hidden leadership', detail: '3 teams managed informally' },
-                        { label: 'Process architect', detail: 'Built CI/CD from scratch' },
+                        { label: 'Hidden strength', detail: 'Cross-team influence' },
+                        { label: 'Overlooked skill', detail: 'Process design' },
                       ].map((insight) => (
                         <div class="flex items-center gap-2 bg-brand-magenta/5 dark:bg-brand-magenta/10 rounded-lg px-3 py-2 border border-brand-magenta/10">
                           <svg class="w-3.5 h-3.5 text-brand-magenta flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
@@ -122,9 +122,9 @@ const steps = [
                     <!-- Career tracks -->
                     <div class="space-y-2.5 mb-4">
                       {[
-                        { track: 'Engineering Manager', cases: 8, show: ['Leadership', 'Hiring'], hide: ['Portfolio'], fit: 92 },
-                        { track: 'Principal Engineer', cases: 6, show: ['Architecture', 'Mentoring'], hide: ['Management'], fit: 78 },
-                        { track: 'Product Lead', cases: 5, show: ['Strategy', 'Stakeholders'], hide: ['Deep Tech'], fit: 65 },
+                        { track: 'People Leadership', cases: 8, show: ['Leadership', 'Team Building'], hide: ['Narrow Focus'], fit: 92 },
+                        { track: 'Senior Specialist', cases: 6, show: ['Deep Expertise', 'Mentoring'], hide: ['Management'], fit: 78 },
+                        { track: 'Strategic Pivot', cases: 5, show: ['Strategy', 'Stakeholders'], hide: ['Execution'], fit: 65 },
                       ].map((t, j) => (
                         <div class="bg-white dark:bg-cosmos-800 rounded-xl shadow-sm p-3.5 border border-cosmos-100 dark:border-cosmos-700">
                           <div class="flex items-center justify-between mb-2">
@@ -162,17 +162,17 @@ const steps = [
                             <svg class="w-4 h-4 text-brand-magenta" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" /></svg>
                           </div>
                           <div>
-                            <p class="text-[11px] font-bold text-cosmos-800 dark:text-cosmos-200">Case Library</p>
-                            <p class="text-[10px] text-cosmos-400">23 cases extracted</p>
+                            <p class="text-[11px] font-bold text-cosmos-800 dark:text-cosmos-200">Your Stories</p>
+                            <p class="text-[10px] text-cosmos-400">12 stories structured</p>
                           </div>
                         </div>
                       </div>
                       <!-- Case items -->
                       <div class="space-y-2">
                         {[
-                          { case: 'Rebuilt payment system under deadline', tracks: ['EM', 'Principal'], type: 'Tech Leadership' },
-                          { case: 'Negotiated vendor contract, saved $400K', tracks: ['Product', 'EM'], type: 'Business Impact' },
-                          { case: 'Mentored 5 juniors to mid-level', tracks: ['EM'], type: 'People' },
+                          { case: 'Rescued a project everyone had written off', tracks: ['Lead', 'Expert'], type: 'Leadership' },
+                          { case: 'Spotted the problem no one else saw', tracks: ['Strategy', 'Lead'], type: 'Impact' },
+                          { case: 'Built and grew a team from scratch', tracks: ['Lead'], type: 'People' },
                         ].map((c) => (
                           <div class="rounded-lg bg-cosmos-50 dark:bg-cosmos-700/30 p-2.5">
                             <p class="text-[10px] font-medium text-cosmos-700 dark:text-cosmos-300 mb-1.5">{c.case}</p>
@@ -192,8 +192,8 @@ const steps = [
                         <svg class="w-4 h-4 text-brand-coral" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
                       </div>
                       <div class="flex-1">
-                        <p class="text-[11px] font-bold text-cosmos-800 dark:text-cosmos-200">Mock Interview · EM Track</p>
-                        <p class="text-[10px] text-cosmos-400">Behavioral round · 85% score</p>
+                        <p class="text-[11px] font-bold text-cosmos-800 dark:text-cosmos-200">Mock Interview · Leadership</p>
+                        <p class="text-[10px] text-cosmos-400">Behavioral round · Ready</p>
                       </div>
                     </div>
                   </div>
@@ -205,10 +205,10 @@ const steps = [
                       <div class="absolute left-2 top-2 bottom-2 w-px bg-gradient-to-b from-brand-magenta via-brand-amber to-brand-coral"></div>
                       {[
                         { phase: 'Job Search', detail: 'Targeted applications from your profile', time: 'Month 1-2', icon: '🎯', done: true },
-                        { phase: 'Landed the Role', detail: 'Eng Manager at FinTech startup', time: 'Month 2', icon: '✓', done: true },
-                        { phase: 'Probation Support', detail: '1:1 prep, stakeholder mapping', time: 'Month 3-5', icon: '◆', done: true },
-                        { phase: 'First Promotion', detail: 'Achievement comms to leadership', time: 'Month 12', icon: '↑', done: false },
-                        { phase: 'Next Move', detail: 'Updated profile, new tracks ready', time: 'Ongoing', icon: '∞', done: false },
+                        { phase: 'Landed the Role', detail: 'The right offer, accepted', time: 'Month 3', icon: '✓', done: true },
+                        { phase: 'Settling In', detail: '1:1 prep, stakeholder mapping', time: 'Month 4-6', icon: '◆', done: true },
+                        { phase: 'First Promotion', detail: 'Achievement communication', time: 'Year 1', icon: '↑', done: false },
+                        { phase: 'Next Chapter', detail: 'Profile updated, new paths ready', time: 'Ongoing', icon: '∞', done: false },
                       ].map((item, j) => (
                         <div class="relative flex items-start gap-3">
                           <div class={`absolute -left-6 w-4 h-4 rounded-full border-2 flex items-center justify-center text-[8px]
