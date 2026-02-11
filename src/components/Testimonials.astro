@@ -1,0 +1,76 @@
+---
+const testimonials = [
+  {
+    quote: "I was stuck applying to the same type of roles for 2 years. Continuum helped me realize my fintech experience was worth 40% more in a different framing. Got 3 offers in 6 weeks.",
+    name: 'Alex K.',
+    role: 'Senior Engineer → Engineering Manager',
+    company: 'Now at a top-tier fintech',
+    avatar: 'AK',
+  },
+  {
+    quote: "The voice sessions were a game-changer. I described a migration project casually and the AI turned it into a leadership narrative that landed me interviews at companies I thought were out of reach.",
+    name: 'Sarah M.',
+    role: 'Staff Engineer',
+    company: 'Targeting US market from EU',
+    avatar: 'SM',
+  },
+  {
+    quote: "Running 3 career tracks simultaneously would have been impossible manually. Continuum kept my IC Lead, EM, and Product narratives separate but coherent. Best investment in my career.",
+    name: 'David R.',
+    role: 'Tech Lead → Multiple paths',
+    company: 'Exploring IC & management tracks',
+    avatar: 'DR',
+  },
+];
+---
+
+<section class="section-padding">
+  <div class="container-narrow mx-auto">
+    <!-- Section header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <p data-animate class="text-sm font-semibold uppercase tracking-wider text-brand-amber mb-4">What People Say</p>
+      <h2 data-animate class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-6 stagger-1">
+        Real stories from<br />
+        <span class="gradient-text-reverse">real professionals</span>
+      </h2>
+    </div>
+
+    <!-- Testimonial cards -->
+    <div class="grid md:grid-cols-3 gap-8">
+      {testimonials.map((t, i) => (
+        <div
+          data-animate
+          class={`relative rounded-3xl p-8 stagger-${i + 1}
+            bg-white dark:bg-cosmos-900/50 border border-cosmos-100 dark:border-cosmos-800
+            hover:shadow-xl hover:shadow-cosmos-200/30 dark:hover:shadow-black/20 transition-all duration-300`}
+        >
+          <!-- Quote mark -->
+          <svg class="w-10 h-10 text-brand-teal/20 mb-4" fill="currentColor" viewBox="0 0 32 32">
+            <path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H8c0-1.1.9-2 2-2V8zm14 0c-3.3 0-6 2.7-6 6v10h10V14h-6c0-1.1.9-2 2-2V8z"/>
+          </svg>
+
+          <!-- Quote -->
+          <p class="text-cosmos-600 dark:text-cosmos-300 leading-relaxed mb-6">
+            {t.quote}
+          </p>
+
+          <!-- Author -->
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-brand-teal to-brand-amber flex items-center justify-center text-white text-sm font-bold">
+              {t.avatar}
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-cosmos-900 dark:text-white">{t.name}</p>
+              <p class="text-xs text-cosmos-500 dark:text-cosmos-400">{t.role}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Early access note -->
+    <p data-animate class="text-center text-sm text-cosmos-400 dark:text-cosmos-500 mt-10 italic">
+      Beta user stories. Names changed for privacy.
+    </p>
+  </div>
+</section>

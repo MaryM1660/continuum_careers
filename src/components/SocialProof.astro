@@ -1,0 +1,20 @@
+---
+const companies = [
+  'Stripe', 'Revolut', 'Klarna', 'N26', 'Wise', 'Monzo', 'Checkout.com', 'Adyen'
+];
+---
+
+<section class="py-16 border-y border-cosmos-100 dark:border-cosmos-800/50">
+  <div class="container-narrow mx-auto px-4 sm:px-6 lg:px-8">
+    <p data-animate class="text-center text-sm font-medium text-cosmos-400 dark:text-cosmos-500 uppercase tracking-wider mb-8">
+      Built for senior professionals targeting top-tier companies
+    </p>
+    <div data-animate class="flex flex-wrap justify-center items-center gap-x-12 gap-y-6 stagger-1">
+      {companies.map((company) => (
+        <span class="text-lg font-semibold text-cosmos-300 dark:text-cosmos-600 hover:text-cosmos-500 dark:hover:text-cosmos-400 transition-colors cursor-default select-none">
+          {company}
+        </span>
+      ))}
+    </div>
+  </div>
+</section>
