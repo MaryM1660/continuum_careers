@@ -1,0 +1,38 @@
+---
+const metrics = [
+  { value: '4', label: 'Career tracks managed simultaneously', suffix: '' },
+  { value: '12', label: 'Pipeline stages from discovery to offer', suffix: '' },
+  { value: '3', label: 'Target markets: US, UK, EU', suffix: '' },
+  { value: '5', label: 'Minutes to first career insight via voice', suffix: 'min' },
+];
+---
+
+<section class="py-20 sm:py-28 bg-gradient-to-r from-cosmos-900 to-cosmos-950 dark:from-cosmos-950 dark:to-black relative overflow-hidden">
+  <!-- Decorative elements -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-brand-teal/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-brand-amber/5 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="container-narrow mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+      {metrics.map((metric, i) => (
+        <div data-animate class={`text-center stagger-${i + 1}`}>
+          <div class="flex items-baseline justify-center gap-1 mb-2">
+            <span class="text-5xl sm:text-6xl lg:text-7xl font-black gradient-text">
+              {metric.value}
+            </span>
+            {metric.suffix && (
+              <span class="text-xl sm:text-2xl font-bold text-cosmos-400">
+                {metric.suffix}
+              </span>
+            )}
+          </div>
+          <p class="text-sm sm:text-base text-cosmos-400 font-medium">
+            {metric.label}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
