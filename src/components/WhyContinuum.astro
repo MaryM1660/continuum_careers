@@ -5,9 +5,9 @@ const differentiators = [
       <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
     </svg>`,
     label: 'Voice-First',
-    title: 'We extract. Others ask you to type.',
+    title: 'You talk. AI uncovers what matters.',
     description: 'Traditional tools make you fill forms and describe your experience in text boxes. Continuum conducts AI voice interviews that draw out achievements you forgot you had — then structures them automatically.',
-    color: 'teal',
+    color: 'magenta',
   },
   {
     icon: `<svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
@@ -25,7 +25,7 @@ const differentiators = [
     label: 'Multi-Track',
     title: 'Explore paths in parallel, not one at a time.',
     description: 'Considering IC Lead, Engineering Manager, and Product roles simultaneously? Each track gets its own tailored narrative, gap analysis, and preparation strategy — all managed from one place.',
-    color: 'teal',
+    color: 'magenta',
   },
 ];
 ---
@@ -34,7 +34,7 @@ const differentiators = [
   <div class="container-narrow mx-auto">
     <!-- Section header -->
     <div class="text-center max-w-3xl mx-auto mb-16">
-      <p data-animate class="text-sm font-semibold uppercase tracking-wider text-brand-teal mb-4">Why Continuum</p>
+      <p data-animate class="text-sm font-semibold uppercase tracking-wider text-brand-magenta mb-4">Why Continuum</p>
       <h2 data-animate class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-6 stagger-1">
         Career tools are broken.<br />
         <span class="gradient-text">We rebuilt the approach.</span>
@@ -56,13 +56,13 @@ const differentiators = [
         >
           <!-- Icon -->
           <div class={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6
-            ${item.color === 'teal' ? 'bg-brand-teal/10 text-brand-teal' : 'bg-brand-amber/10 text-brand-amber'}`}
+            ${item.color === 'teal' ? 'bg-brand-magenta/10 text-brand-magenta' : 'bg-brand-amber/10 text-brand-amber'}`}
             set:html={item.icon}
           />
 
           <!-- Label -->
           <span class={`inline-block text-xs font-bold uppercase tracking-wider mb-3
-            ${item.color === 'teal' ? 'text-brand-teal' : 'text-brand-amber'}`}>
+            ${item.color === 'teal' ? 'text-brand-magenta' : 'text-brand-amber'}`}>
             {item.label}
           </span>
 

@@ -23,12 +23,12 @@
 @layer components {
   .gradient-text {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, #2dd4bf 0%, #e8933a 100%);
+    background-image: linear-gradient(135deg, #B51783 0%, #e8933a 100%);
   }
 
   .gradient-text-reverse {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, #e8933a 0%, #2dd4bf 100%);
+    background-image: linear-gradient(135deg, #e8933a 0%, #B51783 100%);
   }
 
   .glass {
@@ -60,29 +60,29 @@
     box-shadow: 0 0 60px rgba(232, 147, 58, 0.2);
   }
 
-  .glow-teal {
-    box-shadow: 0 0 40px rgba(45, 212, 191, 0.15);
+  .glow-magenta {
+    box-shadow: 0 0 40px rgba(181, 23, 131, 0.15);
   }
 
-  .dark .glow-teal {
-    box-shadow: 0 0 60px rgba(45, 212, 191, 0.2);
+  .dark .glow-magenta {
+    box-shadow: 0 0 60px rgba(181, 23, 131, 0.2);
   }
 
   .btn-primary {
     @apply inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-2xl transition-all duration-300;
-    @apply bg-gradient-to-r from-brand-teal to-brand-amber text-white;
+    @apply bg-gradient-to-r from-brand-magenta to-brand-amber text-white;
     @apply hover:shadow-lg hover:shadow-brand-amber/25 hover:scale-[1.02];
     @apply active:scale-[0.98];
   }
 
   .btn-secondary {
     @apply inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-2xl transition-all duration-300;
-    @apply border-2 border-cosmos-300 text-cosmos-700 hover:border-brand-teal hover:text-brand-teal-dark;
+    @apply border-2 border-cosmos-300 text-cosmos-700 hover:border-brand-magenta hover:text-brand-magenta;
     @apply active:scale-[0.98];
   }
 
   .dark .btn-secondary {
-    @apply border-cosmos-600 text-cosmos-200 hover:border-brand-teal hover:text-brand-teal;
+    @apply border-cosmos-600 text-cosmos-200 hover:border-brand-coral hover:text-brand-coral;
   }
 
   .section-padding {
@@ -128,7 +128,7 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 20% 50%, rgba(45, 212, 191, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 20% 50%, rgba(181, 23, 131, 0.08) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(232, 147, 58, 0.06) 0%, transparent 50%),
     radial-gradient(circle at 50% 80%, rgba(134, 0, 128, 0.05) 0%, transparent 50%);
   pointer-events: none;
@@ -137,7 +137,7 @@
 
 .dark .cosmic-bg::before {
   background:
-    radial-gradient(circle at 20% 50%, rgba(45, 212, 191, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 20% 50%, rgba(181, 23, 131, 0.12) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(232, 147, 58, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 50% 80%, rgba(134, 0, 128, 0.08) 0%, transparent 50%);
 }

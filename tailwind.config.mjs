@@ -6,13 +6,16 @@ export default {
     extend: {
       colors: {
         brand: {
+          magenta: '#B51783',
+          'magenta-light': '#d42d9e',
+          'magenta-dark': '#920f6a',
+          purple: '#860080',
+          'purple-light': '#a31a9d',
+          coral: '#E84A64',
+          orange: '#F2814F',
           amber: '#e8933a',
           'amber-light': '#f0ad5e',
           'amber-dark': '#c97a2e',
-          teal: '#2dd4bf',
-          'teal-light': '#5eead4',
-          'teal-dark': '#14b8a6',
-          cyan: '#22d3ee',
         },
         cosmos: {
           50: '#f8fafc',
@@ -35,8 +38,8 @@ export default {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-brand': 'linear-gradient(135deg, #2dd4bf, #22d3ee, #e8933a)',
-        'gradient-brand-text': 'linear-gradient(90deg, #2dd4bf, #e8933a)',
+        'gradient-brand': 'linear-gradient(135deg, #860080, #B51783, #E84A64, #e8933a)',
+        'gradient-brand-text': 'linear-gradient(90deg, #B51783, #e8933a)',
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',
