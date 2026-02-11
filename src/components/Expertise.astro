@@ -1,0 +1,69 @@
+---
+---
+
+<section class="section-padding cosmic-bg overflow-hidden">
+  <div class="container-narrow mx-auto">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <!-- Left: Content -->
+      <div>
+        <p data-animate class="text-sm font-semibold uppercase tracking-wider text-brand-magenta mb-4">Our Methodology</p>
+        <h2 data-animate class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-6 stagger-1">
+          10+ years of real career consulting,<br />
+          <span class="gradient-text">packaged into AI.</span>
+        </h2>
+        <div data-animate class="space-y-4 text-cosmos-500 dark:text-cosmos-400 leading-relaxed stagger-2">
+          <p>
+            This isn't "10 tips to improve your LinkedIn." Our practices come from top recruiters and career coaches who've spent a decade placing professionals into roles at leading companies. We've taken what used to be a 6-month premium consulting engagement and made it accessible to everyone.
+          </p>
+          <p>
+            The difference? With a traditional consultant, you get 30 minutes once a week. With Continuum, you get <strong class="text-cosmos-700 dark:text-cosmos-200">unlimited time</strong>. Talk for as long as you need. Go deep. No clock ticking, no session limits. You can be completely open — there's no judgment, no rush, and the AI remembers everything from every session.
+          </p>
+          <p>
+            The result is <strong class="text-cosmos-700 dark:text-cosmos-200">more personalized than a human consultant</strong> — because it has your complete profile, every case, every nuance. And it's available whenever you are.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right: Visual -->
+      <div data-animate class="stagger-3">
+        <div class="relative">
+          <!-- Comparison card -->
+          <div class="rounded-3xl bg-white dark:bg-cosmos-900/50 border border-cosmos-100 dark:border-cosmos-800 overflow-hidden shadow-xl">
+            <!-- Header -->
+            <div class="grid grid-cols-3 border-b border-cosmos-100 dark:border-cosmos-800">
+              <div class="p-4"></div>
+              <div class="p-4 text-center border-x border-cosmos-100 dark:border-cosmos-800">
+                <p class="text-xs font-bold uppercase tracking-wider text-cosmos-400">Traditional Coach</p>
+              </div>
+              <div class="p-4 text-center bg-brand-magenta/5 dark:bg-brand-magenta/10">
+                <p class="text-xs font-bold uppercase tracking-wider text-brand-magenta">Continuum</p>
+              </div>
+            </div>
+            <!-- Rows -->
+            {[
+              { label: 'Session time', traditional: '30 min/week', continuum: 'Unlimited', highlight: true },
+              { label: 'Duration', traditional: '6 months', continuum: 'Lifelong', highlight: true },
+              { label: 'Personalization', traditional: 'High', continuum: 'Higher', highlight: true },
+              { label: 'Profile depth', traditional: 'Notes-based', continuum: 'Complete Career DNA', highlight: true },
+              { label: 'Career tracks', traditional: '1 at a time', continuum: 'All in parallel', highlight: true },
+              { label: 'Available', traditional: 'By appointment', continuum: '24/7', highlight: true },
+              { label: 'Cost', traditional: '$200-500/hr', continuum: 'From $0', highlight: true },
+            ].map((row, i) => (
+              <div class={`grid grid-cols-3 ${i % 2 === 0 ? 'bg-cosmos-50/50 dark:bg-cosmos-900/30' : ''}`}>
+                <div class="p-3.5 flex items-center">
+                  <span class="text-xs font-medium text-cosmos-600 dark:text-cosmos-300">{row.label}</span>
+                </div>
+                <div class="p-3.5 text-center border-x border-cosmos-100 dark:border-cosmos-800 flex items-center justify-center">
+                  <span class="text-xs text-cosmos-400">{row.traditional}</span>
+                </div>
+                <div class="p-3.5 text-center bg-brand-magenta/5 dark:bg-brand-magenta/10 flex items-center justify-center">
+                  <span class="text-xs font-semibold text-brand-magenta">{row.continuum}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
