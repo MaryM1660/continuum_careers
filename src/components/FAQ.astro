@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     question: 'Where does the methodology come from?',
-    answer: 'Real career consulting methodology — distilled from years of hands-on work with recruiters and career coaches. We\'ve taken what used to be a premium, months-long engagement and made it AI-powered — just as personalized, but with unlimited time and availability.',
+    answer: '<ul class="list-disc pl-5 space-y-1.5"><li>Built on real career consulting practices — from hands-on work with recruiters and career coaches</li><li>What used to take months with a premium consultant, now AI-powered and just as personalized</li><li>Unlimited time and availability — no 30-minute weekly slots</li></ul>',
   },
   {
     question: 'What happens after I land the job?',
@@ -64,9 +64,7 @@ const faqs = [
             </svg>
           </button>
           <div class="faq-content hidden px-6 pb-6">
-            <p class="text-cosmos-500 dark:text-cosmos-400 leading-relaxed">
-              {faq.answer}
-            </p>
+            <div class="text-cosmos-500 dark:text-cosmos-400 leading-relaxed" set:html={faq.answer} />
           </div>
         </div>
       ))}
