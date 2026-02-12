@@ -17,7 +17,7 @@ const steps = [
   {
     number: '03',
     title: 'Documents & Prep',
-    description: 'Resumes and cover letters built from your real cases — not keywords. Mock interviews calibrated to your target roles. You walk in knowing your story inside out.',
+    description: 'For each career track — a targeted resume built from your real cases. A cover letter that connects your story to the role. Mock interviews to rehearse your answers. Company briefs with context and talking points. Everything generated from your Career DNA, everything consistent.',
     visual: 'cases',
     color: 'magenta',
   },
@@ -153,48 +153,50 @@ const steps = [
                   </div>
                 )}
                 {step.visual === 'cases' && (
-                  <div class="p-5 w-full max-w-sm mx-auto space-y-3">
-                    <!-- Case cards -->
-                    <div class="bg-white dark:bg-cosmos-800 rounded-xl shadow-lg p-4">
-                      <div class="flex items-center justify-between mb-3">
-                        <div class="flex items-center gap-2">
-                          <div class="w-8 h-8 rounded-lg bg-brand-magenta/10 flex items-center justify-center">
-                            <svg class="w-4 h-4 text-brand-magenta" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" /></svg>
-                          </div>
-                          <div>
-                            <p class="text-[11px] font-bold text-cosmos-800 dark:text-cosmos-200">Your Stories</p>
-                            <p class="text-[10px] text-cosmos-400">12 stories structured</p>
-                          </div>
-                        </div>
+                  <div class="p-5 w-full max-w-sm mx-auto space-y-2.5">
+                    <!-- Resume doc -->
+                    <div class="bg-white dark:bg-cosmos-800 rounded-xl shadow-lg p-3.5 flex items-center gap-3">
+                      <div class="w-9 h-9 rounded-lg bg-brand-magenta/10 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-brand-magenta" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>
                       </div>
-                      <!-- Case items -->
-                      <div class="space-y-2">
-                        {[
-                          { case: 'Rescued a project everyone had written off', tracks: ['Lead', 'Expert'], type: 'Leadership' },
-                          { case: 'Spotted the problem no one else saw', tracks: ['Strategy', 'Lead'], type: 'Impact' },
-                          { case: 'Built and grew a team from scratch', tracks: ['Lead'], type: 'People' },
-                        ].map((c) => (
-                          <div class="rounded-lg bg-cosmos-50 dark:bg-cosmos-700/30 p-2.5">
-                            <p class="text-[10px] font-medium text-cosmos-700 dark:text-cosmos-300 mb-1.5">{c.case}</p>
-                            <div class="flex items-center gap-1.5">
-                              <span class="px-1.5 py-0.5 rounded text-[8px] font-medium bg-brand-magenta/10 text-brand-magenta">{c.type}</span>
-                              {c.tracks.map((tr) => (
-                                <span class="px-1.5 py-0.5 rounded text-[8px] font-medium bg-brand-amber/10 text-brand-amber">{tr}</span>
-                              ))}
-                            </div>
-                          </div>
-                        ))}
+                      <div class="flex-1 min-w-0">
+                        <p class="text-[11px] font-bold text-cosmos-800 dark:text-cosmos-200">Resume · People Leadership</p>
+                        <p class="text-[10px] text-cosmos-400">Built from 8 cases · Tailored to role</p>
                       </div>
+                      <span class="px-2 py-0.5 rounded-full text-[8px] font-bold bg-green-50 dark:bg-green-900/20 text-green-600 dark:text-green-400 flex-shrink-0">Ready</span>
                     </div>
-                    <!-- Mock interview indicator -->
-                    <div class="bg-white dark:bg-cosmos-800 rounded-xl shadow-lg p-3 flex items-center gap-3">
+                    <!-- Cover letter doc -->
+                    <div class="bg-white dark:bg-cosmos-800 rounded-xl shadow-lg p-3.5 flex items-center gap-3">
+                      <div class="w-9 h-9 rounded-lg bg-brand-amber/10 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-brand-amber" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.981l7.5-4.039a2.25 2.25 0 012.134 0l7.5 4.039a2.25 2.25 0 011.183 1.98V19.5z" /></svg>
+                      </div>
+                      <div class="flex-1 min-w-0">
+                        <p class="text-[11px] font-bold text-cosmos-800 dark:text-cosmos-200">Cover Letter · Acme Corp</p>
+                        <p class="text-[10px] text-cosmos-400">Your story matched to their needs</p>
+                      </div>
+                      <span class="px-2 py-0.5 rounded-full text-[8px] font-bold bg-green-50 dark:bg-green-900/20 text-green-600 dark:text-green-400 flex-shrink-0">Ready</span>
+                    </div>
+                    <!-- Mock interview -->
+                    <div class="bg-white dark:bg-cosmos-800 rounded-xl shadow-lg p-3.5 flex items-center gap-3">
                       <div class="w-9 h-9 rounded-lg bg-brand-coral/10 flex items-center justify-center flex-shrink-0">
-                        <svg class="w-4 h-4 text-brand-coral" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>
+                        <svg class="w-4 h-4 text-brand-coral" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" /></svg>
                       </div>
-                      <div class="flex-1">
-                        <p class="text-[11px] font-bold text-cosmos-800 dark:text-cosmos-200">Mock Interview · Leadership</p>
-                        <p class="text-[10px] text-cosmos-400">Behavioral round · Ready</p>
+                      <div class="flex-1 min-w-0">
+                        <p class="text-[11px] font-bold text-cosmos-800 dark:text-cosmos-200">Mock Interview · Behavioral</p>
+                        <p class="text-[10px] text-cosmos-400">Leadership questions · With feedback</p>
                       </div>
+                      <span class="px-2 py-0.5 rounded-full text-[8px] font-bold bg-brand-amber/10 text-brand-amber flex-shrink-0">Practice</span>
+                    </div>
+                    <!-- Company brief -->
+                    <div class="bg-white dark:bg-cosmos-800 rounded-xl shadow-lg p-3.5 flex items-center gap-3">
+                      <div class="w-9 h-9 rounded-lg bg-brand-magenta/10 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-4 h-4 text-brand-magenta" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" /></svg>
+                      </div>
+                      <div class="flex-1 min-w-0">
+                        <p class="text-[11px] font-bold text-cosmos-800 dark:text-cosmos-200">Company Brief · Acme Corp</p>
+                        <p class="text-[10px] text-cosmos-400">Culture, talking points, salary context</p>
+                      </div>
+                      <span class="px-2 py-0.5 rounded-full text-[8px] font-bold bg-green-50 dark:bg-green-900/20 text-green-600 dark:text-green-400 flex-shrink-0">Ready</span>
                     </div>
                   </div>
                 )}
